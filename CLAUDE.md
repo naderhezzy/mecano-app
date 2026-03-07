@@ -29,11 +29,16 @@ See `project-progress.md` for detailed phase-by-phase progress tracking.
 
 ## Workflow Rules
 - **Never do long tasks in one run.** Break work into multiple phases, each committed separately.
+- **Step by step, phase by phase.** Each change should be reviewable independently.
 - **Update `project-progress.md`** after completing each phase/commit.
 - **Commit frequently** — each logical unit of work gets its own commit.
 - **Push only when asked** — never auto-push.
 - **Run code gen** after modifying Freezed/Riverpod/Drift annotated files.
-- **Verify compilation** (`flutter analyze` or partial build) before committing.
+- **Validate before committing** (especially after deps/config changes):
+  1. `flutter analyze` — 0 errors
+  2. `flutter build apk --debug` — Android builds
+  3. `flutter build ios --debug --no-codesign` — iOS builds
+- All three must pass before a commit is considered safe.
 
 ## Commands
 ```bash
