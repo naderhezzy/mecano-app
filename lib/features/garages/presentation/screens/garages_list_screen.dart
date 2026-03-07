@@ -32,7 +32,7 @@ class _GaragesListScreenState extends ConsumerState<GaragesListScreen> {
   @override
   Widget build(BuildContext context) {
     final garagesAsync = ref.watch(
-      garagesProvider(city: _selectedCity, search: _searchQuery),
+      garagesProvider(_selectedCity, _searchQuery),
     );
     final citiesAsync = ref.watch(garageCitiesProvider);
 
@@ -114,10 +114,7 @@ class _GaragesListScreenState extends ConsumerState<GaragesListScreen> {
               error: (error, _) => AppError(
                 message: error.toString(),
                 onRetry: () => ref.invalidate(
-                  garagesProvider(
-                    city: _selectedCity,
-                    search: _searchQuery,
-                  ),
+                  garagesProvider(_selectedCity, _searchQuery),
                 ),
               ),
               data: (garages) {
@@ -134,10 +131,7 @@ class _GaragesListScreenState extends ConsumerState<GaragesListScreen> {
                 return RefreshIndicator(
                   onRefresh: () async {
                     ref.invalidate(
-                      garagesProvider(
-                        city: _selectedCity,
-                        search: _searchQuery,
-                      ),
+                      garagesProvider(_selectedCity, _searchQuery),
                     );
                   },
                   child: ListView.separated(

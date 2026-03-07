@@ -4,7 +4,7 @@ part 'maintenance_record.freezed.dart';
 part 'maintenance_record.g.dart';
 
 @freezed
-class MaintenanceRecord with _$MaintenanceRecord {
+abstract class MaintenanceRecord with _$MaintenanceRecord {
   const factory MaintenanceRecord({
     required String id,
     required String vehicleId,

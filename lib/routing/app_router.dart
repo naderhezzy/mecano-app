@@ -37,7 +37,7 @@ GoRouter appRouter(Ref ref) {
     navigatorKey: _rootNavigatorKey,
     initialLocation: '/',
     redirect: (context, state) {
-      final isLoggedIn = authState.valueOrNull != null;
+      final isLoggedIn = authState.value != null;
       final isAuthRoute = state.matchedLocation.startsWith('/auth');
       final isSplash = state.matchedLocation == '/';
       final isOnboarding = state.matchedLocation == '/onboarding';

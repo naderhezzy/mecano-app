@@ -20,7 +20,7 @@ class HomeScreen extends ConsumerWidget {
     final authState = ref.watch(authStateProvider);
     final userId =
         ref.watch(supabaseClientProvider).auth.currentUser?.id ?? '';
-    final userName = authState.valueOrNull?.fullName;
+    final userName = authState.value?.fullName;
 
     return Scaffold(
       body: SafeArea(
@@ -37,7 +37,7 @@ class HomeScreen extends ConsumerWidget {
               // Greeting header
               _GreetingHeader(
                 name: userName,
-                avatarUrl: authState.valueOrNull?.avatarUrl,
+                avatarUrl: authState.value?.avatarUrl,
               ),
               AppSpacing.verticalLg,
 

@@ -4,7 +4,7 @@ part 'garage_service.freezed.dart';
 part 'garage_service.g.dart';
 
 @freezed
-class GarageService with _$GarageService {
+abstract class GarageService with _$GarageService {
   const factory GarageService({
     required String id,
     required String garageId,

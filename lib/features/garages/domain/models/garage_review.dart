@@ -4,7 +4,7 @@ part 'garage_review.freezed.dart';
 part 'garage_review.g.dart';
 
 @freezed
-class GarageReview with _$GarageReview {
+abstract class GarageReview with _$GarageReview {
   const factory GarageReview({
     required String id,
     required String garageId,

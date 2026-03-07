@@ -4,7 +4,7 @@ part 'garage.freezed.dart';
 part 'garage.g.dart';
 
 @freezed
-class Garage with _$Garage {
+abstract class Garage with _$Garage {
   const factory Garage({
     required String id,
     required String name,
