@@ -2,6 +2,8 @@
 
 ## Project Overview
 Virtual Mechanic mobile app for Tunisia. Flutter app targeting iOS + Android.
+**Repo**: https://github.com/naderhezzy/mecano-app
+**Board**: GitHub Project "Mecano" (10 issues tracking phases)
 See `project-progress.md` for detailed phase-by-phase progress tracking.
 
 ## Tech Stack

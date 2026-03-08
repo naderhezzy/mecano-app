@@ -4,10 +4,12 @@
 Virtual Mechanic mobile app for Tunisia targeting 2.3M vehicles. Starting with **Path D (Manual + GPS)** — user input only, no hardware required.
 
 **Tech Stack**: Flutter + Riverpod + GoRouter + Supabase + Drift + Freezed + fpdart
+**Repo**: https://github.com/naderhezzy/mecano-app
+**Board**: GitHub Project "Mecano" — 10 issues (Phases 0-8 closed, Phase 9 open)
 
 ---
 
-## Current Status: 🟢 All Phases Written — Compiles Clean (0 errors)
+## Current Status: 🟢 All Phases Written — Compiles & Builds Clean (0 errors)
 
 | Phase | Description | Status |
 |-------|-------------|--------|
@@ -26,7 +28,13 @@ Virtual Mechanic mobile app for Tunisia targeting 2.3M vehicles. Starting with *
 - `flutter pub get` — ✅ passes
 - `dart run build_runner build` — ✅ 208 outputs generated
 - `flutter analyze` — ✅ 0 errors, 0 warnings (209 info hints only)
+- `flutter build apk --debug` — ✅ Android builds
+- `flutter build ios --debug --no-codesign` — ✅ iOS builds
 - Code gen files committed: 24 `.g.dart` + 8 `.freezed.dart`
+
+### Git Status
+- 6 commits on `main`, pushed to `origin`
+- GitHub Issues: #1-#9 closed (Phases 0-8), #10 open (Phase 9 polish)
 
 ---
 
@@ -255,6 +263,9 @@ Bottom Nav Shell:
 - [x] `flutter pub get` — no errors
 - [x] `dart run build_runner build` — 208 outputs generated
 - [x] `flutter analyze` — 0 errors, 0 warnings
+- [x] `flutter build apk --debug` — Android builds
+- [x] `flutter build ios --debug --no-codesign` — iOS builds
+- [x] Pushed to GitHub + Project board configured
 - [ ] Auth flow: Register → login → home (needs Supabase project)
 - [ ] Vehicle CRUD: Add → list → detail → edit → delete
 - [ ] Maintenance: Log → timeline on vehicle detail
