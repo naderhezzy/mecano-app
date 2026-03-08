@@ -33,7 +33,7 @@ See `project-progress.md` for detailed phase-by-phase progress tracking.
 - **Never do long tasks in one run.** Break work into multiple phases, each committed separately.
 - **Step by step, phase by phase.** Each change should be reviewable independently.
 - **Update `project-progress.md`** after completing each phase/commit.
-- **Commit frequently** — each logical unit of work gets its own commit.
+- **Commit frequently** — each logical unit of work gets its own commit. **Before every commit**: show the proposed commit message and ask the user to review/approve. Never auto-commit.
 - **NEVER push or create PRs unless explicitly asked.** No auto-push, no auto-PR.
 - **Branching**: For any significant task (feature, fix, refactor), create a feature branch (`feature/`, `fix/`, `refactor/`). Work on the branch, then create a PR for review when asked. Only small doc/config changes go directly on `main`.
 - **Run code gen** after modifying Freezed/Riverpod/Drift annotated files.
