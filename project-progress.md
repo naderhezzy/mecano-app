@@ -213,6 +213,15 @@ lib/
 
 ---
 
+## Documentation
+
+- [x] `README.md` — project overview, features, tech stack, setup, screens
+- [x] `docs/DATABASE.md` — database choice rationale, schema, offline-first architecture, setup
+- [x] `CLAUDE.md` — project conventions, workflow rules
+- [x] `project-progress.md` — phase tracking (this file)
+
+---
+
 ## Navigation Map (20 screens)
 
 ```
