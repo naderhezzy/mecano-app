@@ -34,7 +34,8 @@ See `project-progress.md` for detailed phase-by-phase progress tracking.
 - **Step by step, phase by phase.** Each change should be reviewable independently.
 - **Update `project-progress.md`** after completing each phase/commit.
 - **Commit frequently** — each logical unit of work gets its own commit.
-- **Push only when asked** — never auto-push.
+- **NEVER push or create PRs unless explicitly asked.** No auto-push, no auto-PR.
+- **Branching**: For any significant task (feature, fix, refactor), create a feature branch (`feature/`, `fix/`, `refactor/`). Work on the branch, then create a PR for review when asked. Only small doc/config changes go directly on `main`.
 - **Run code gen** after modifying Freezed/Riverpod/Drift annotated files.
 - **Validate before committing** (especially after deps/config changes):
   1. `flutter analyze` — 0 errors
