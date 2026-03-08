@@ -42,6 +42,23 @@ See `project-progress.md` for detailed phase-by-phase progress tracking.
   3. `flutter build ios --debug --no-codesign` — iOS builds
 - All three must pass before a commit is considered safe.
 
+## GitHub Project Board (MANDATORY)
+**Board**: GitHub Project "Mecano" #1, owner: naderhezzy
+**Columns**: Backlog → Ready → In progress → In review → Done
+
+**Always keep the board in sync with your work — just like a human developer:**
+- When **starting work** on a task/issue → move it to **In progress**
+- When work is **ready for review** → move it to **In review**
+- When work is **complete and committed** → move it to **Done**
+- When **planning upcoming work** → move it to **Ready**
+- When **creating new tasks** → create a GitHub issue, add to board, set appropriate status
+- When **closing an issue** → also update its board status to **Done**
+
+Use `gh` CLI and GraphQL API to update statuses. Reference IDs:
+- Project GQL ID: `PVT_kwHOA_uoKM4BPIwp`
+- Status Field ID: `PVTSSF_lAHOA_uoKM4BPIwpzg9onwQ`
+- Status options: Backlog `f75ad846`, Ready `e18bf179`, In progress `47fc9ee4`, In review `aba860b9`, Done `98236657`
+
 ## Commands
 ```bash
 # Install deps
