@@ -222,6 +222,31 @@ lib/
 
 ---
 
+## What's Next
+
+### 1. Supabase Project Setup (blocker — user action required)
+- Create free Supabase project at supabase.com
+- Run `supabase/migrations/00001_initial_schema.sql` in SQL editor
+- Configure app with `--dart-define` for URL + anon key
+
+### 2. Runtime Testing + Bug Fixes
+- Test all flows end-to-end against real Supabase backend
+- Auth → Profile → Vehicles → Maintenance → Garages → Bookings
+- Fix runtime bugs (expect them — code was written without runtime testing)
+- Branch: `fix/runtime-testing`
+
+### 3. Phase 9 Remaining Polish
+- Hardcoded strings → ARB, shimmer skeletons, error boundaries, sync service
+- Branch: `feature/phase9-polish`
+
+### 4. Future Enhancements
+- PostGIS geolocation for nearby garages
+- Push notifications (FCM)
+- Custom SMTP for auth emails
+- Storage buckets for photos/documents
+
+---
+
 ## Navigation Map (20 screens)
 
 ```
